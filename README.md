@@ -194,8 +194,9 @@ The name of the process can simply be changed by renaming the .exe file of the b
 Build the solution
 ```
 Build -> Build Solution
+Debug:
 The .exe file should be located by default in ..\Keylogger\Debug\Keylogger.exe
-or
+Release:
 The .exe file should be located by default in ..\Keylogger\Release\Keylogger.exe
 ```
 Rename the built Keylogger.exe file
@@ -250,8 +251,9 @@ located at ..\Keylogger\Keylogger
 Build the solution
 ```
 Build -> Build Solution
+Debug:
 The .exe file should be located by default in ..\Keylogger\Debug\Keylogger.exe
-or
+Release:
 The .exe file should be located by default in ..\Keylogger\Release\Keylogger.exe
 ```
 
