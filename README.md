@@ -62,6 +62,7 @@ What things you need to install the software and how to install them
 A step by step series of examples that tell you have to get a development environment running
 
 Download the repository using either bash or the browser
+- KeyloggerWithCurl
 
 ```
 git clone https://github.com/htmercury/Cpp-Keylogger
