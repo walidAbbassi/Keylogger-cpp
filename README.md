@@ -53,6 +53,8 @@ What things you need to install the software and how to install them
 ```
 * Visual Studio preferably or any IDE of your choice
 * C++11 standards must be enabled and if using GCC compilter, -mwindows flag needs to be checked
+* Curl for KeyloggerWithCurl:
+** test 
 
 ```
 
