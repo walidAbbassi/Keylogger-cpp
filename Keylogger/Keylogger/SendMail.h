@@ -8,13 +8,14 @@
 
 #define SCRIPT_NAME "sm.ps1"
 
+
+
 namespace Mail
 {
 	// Both emails can be the same
 	#define X_EM_TO "ToEmailDestination@gmail.com"
 	#define X_EM_FROM "FromEmailSource@gmail.com"
 	#define X_EM_PASS "Password"
-
 
 	const std::string &PowerShellScript =
 		"Param( \r\n   [String]$Att,\r\n   [String]$Subj,\r\n   "

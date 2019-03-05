@@ -4,17 +4,18 @@
 #include "pch.h"
 #include "EmailWithCurl.h"
 
+
+
+
+
 namespace Mail
-{
+{	
+	
+	
 	// Both emails can be the same
 	#define X_EM_TO "ToEmailDestination@gmail.com"
 	#define X_EM_FROM "FromEmailSource@gmail.com"
 	#define X_EM_PASS "Password"
-
-
-//#undef X_EM_FROM
-//#undef X_EM_TO
-//#undef X_EM_PASS
 
 
 	int SendMail(std::string headMessage, std::string bodyMessage)
