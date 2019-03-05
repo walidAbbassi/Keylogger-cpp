@@ -146,21 +146,27 @@ Look up permissions respectively for your source email that allow less secure ap
 ## Decrypting the log files
 Follow these steps to decrypt any received log files
 
+- Keylogger-Decrypt :
+
+```
+git clone https://github.com/walidAbbassi/Keylogger-cpp/tree/master/Keylogger-Decrypt
+```
+
 Open the Decryption program solution with Visual Studio
 ```
-located at ..\Cpp-Keylogger\Keylogger-Decrypt.sln
+located at ..\Keylogger-Decrypt\Keylogger-Decrypt.sln
 ```
 For other IDEs, make a project that includes all source files
 ```
-located at ..\Cpp-Keylogger\Keylogger-Decrypt\
+located at ..\Keylogger-Decrypt\Keylogger-Decrypt\
 ```
-Build the solution, and find the exe (default: located at ../Cpp-Keylogger/Debug)
+Build the solution, and find the exe (default: located at ../Keylogger-Decrypt/Debug)
 ```
-located at ..\Cpp-Keylogger\Debug\Keylogger-Decrypt.exe
+located at ..\Keylogger-Decrypt\Debug\Keylogger-Decrypt.exe
 ```
 Open a command prompt window at that directory
 ```
-cd ..\Cpp-Keylogger\Debug\
+cd ..\Keylogger-Decrypt\Debug\
 ```
 Run the decryption program which takes in a input file and a output file which contains the decrypted contents
 ```
@@ -176,7 +182,7 @@ The name of the process can simply be changed by renaming the .exe file of the b
 Build the solution
 ```
 Build -> Build Solution
-The .exe file should be located by default in ..\Cpp-Keylogger\Debug\Keylogger.exe
+The .exe file should be located by default in ..\Keylogger\Debug\Keylogger.exe
 ```
 Rename the built Keylogger.exe file
 
@@ -185,7 +191,7 @@ Here, the user can set the interval at which each log file is created and sent
 
 Open KeybHook.h
 ```
-located at ..\Cpp-Keylogger\Keylogger\KeybHook.h
+located at ..\Keylogger\Keylogger\KeybHook.h
 ```
 Edit line 36 with the desired time (default is 30 seconds)
 ```
@@ -196,7 +202,7 @@ Here, the user can set how the log file formats the read keys
 
 Open Helper.h
 ```
-located at ..\Cpp-Keylogger\Keylogger\Helper.h
+located at ..\Keylogger\Keylogger\Helper.h
 ```
 Edit lines 77 - 83 to change how single keys are formated
 ```
@@ -208,7 +214,7 @@ Here, the user can exclude keys they don't want to be logged
 
 Open KeybHook.h
 ```
-located at ..\Cpp-Keylogger\Keylogger\KeybHook.h
+located at ..\Keylogger\Keylogger\KeybHook.h
 ```
 Take a look at lines 40 - 72
 ```
@@ -221,16 +227,16 @@ Here, the user builds the solution to an .exe file
 
 Open the solution file in Visual Studio using the sln file
 ```
-located at ..\Cpp-Keylogger\Keylogger.sln
+located at ..\Keylogger\Keylogger.sln
 ```
 For other IDEs, make a project that includes all source and header files
 ```
-located at ..\Cpp-Keylogger\Keylogger
+located at ..\Keylogger\Keylogger
 ```
 Build the solution
 ```
 Build -> Build Solution
-The .exe file should be located by default in ..\Cpp-Keylogger\Debug\Keylogger.exe
+The .exe file should be located by default in ..\Keylogger\Debug\Keylogger.exe
 ```
 
 
