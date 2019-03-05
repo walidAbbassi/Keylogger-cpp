@@ -57,15 +57,15 @@ What things you need to install the software and how to install them
   - install vcpkg : 
       - git clone https://github.com/Microsoft/vcpkg.git
       - cd vcpkg
-    - Windows: 
-      - .\bootstrap-vcpkg.bat
-      - .\vcpkg integrate install
-      - .\vcpkg install curl[*]:x86-windows (for x86 windows)
-      - .\vcpkg install curl[*]:x64-windows (for x64 windows)
-    - Linux: 
-      - ./bootstrap-vcpkg.sh
-      - ./vcpkg integrate install
-      - ./vcpkg install curl
+      - Windows: 
+          - .\bootstrap-vcpkg.bat
+          - .\vcpkg integrate install
+          - .\vcpkg install curl[*]:x86-windows (for x86 windows)
+          - .\vcpkg install curl[*]:x64-windows (for x64 windows)
+      - Linux: 
+          - ./bootstrap-vcpkg.sh
+          - ./vcpkg integrate install
+          - ./vcpkg install curl
 
 ```
 
