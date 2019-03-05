@@ -55,11 +55,17 @@ What things you need to install the software and how to install them
 * C++11 standards must be enabled and if using GCC compilter, -mwindows flag needs to be checked
 * Curl for KeyloggerWithCurl:
   - install vcpkg : 
-    - git clone https://github.com/Microsoft/vcpkg.git
-    - cd vcpkg
-    - .\bootstrap-vcpkg.bat
-    - .\vcpkg integrate install
-    - .\vcpkg install curl[*]:x86-windows or  .\vcpkg install curl[*]:x64-windows
+      - git clone https://github.com/Microsoft/vcpkg.git
+      - cd vcpkg
+    - Windows: 
+      - .\bootstrap-vcpkg.bat
+      - .\vcpkg integrate install
+      - .\vcpkg install curl[*]:x86-windows (for x86 windows)
+      - .\vcpkg install curl[*]:x64-windows (for x64 windows)
+    - Linux: 
+      - ./bootstrap-vcpkg.sh
+      - ./vcpkg integrate install
+      - ./vcpkg install curl
 
 ```
 
