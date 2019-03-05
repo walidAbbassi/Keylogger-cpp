@@ -1,6 +1,6 @@
 # Keylogger (Completed)
 Advanced keylogger made in C++ that works on Window 7, 8, 8.1, And 10 - **Use at your own discretion** <br/><br/>
-This is a keylogger I learned from Udemy for educational purposes. Please do not use this code for illegal or immoral purposes and keep it open source! The project also includes a decryption program will accepts an encrypted log file and translates it to a human readable language. <br/>
+This is a keylogger for educational purposes. Please do not use this code for illegal or immoral purposes and keep it open source! The project also includes a decryption program will accepts an encrypted log file and translates it to a human readable language. <br/>
 If you would like to take the course yourself, check it out [here](https://www.udemy.com/how-to-create-an-advanced-keylogger-from-scratch-for-windows).
 
 Table of Contents
