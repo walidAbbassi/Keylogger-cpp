@@ -1,7 +1,6 @@
 # Keylogger (Completed)
 Advanced keylogger made in C++ that works on Window 7, 8, 8.1, And 10 - **Use at your own discretion** <br/><br/>
-This is a keylogger I learned from Udemy for educational purposes. Please do not use this code for illegal or immoral purposes and keep it open source! The project also includes a decryption program will accepts an encrypted log file and translates it to a human readable language. <br/>
-If you would like to take the course yourself, check it out [here](https://www.udemy.com/how-to-create-an-advanced-keylogger-from-scratch-for-windows).
+This is a keylogger for educational purposes. Please do not use this code for illegal or immoral purposes and keep it open source! The project also includes a decryption program will accepts an encrypted log file and translates it to a human readable language. <br/>
 
 Table of Contents
 =================
@@ -54,6 +53,19 @@ What things you need to install the software and how to install them
 ```
 * Visual Studio preferably or any IDE of your choice
 * C++11 standards must be enabled and if using GCC compilter, -mwindows flag needs to be checked
+* Curl for KeyloggerWithCurl:
+  - install vcpkg : 
+      - git clone https://github.com/Microsoft/vcpkg.git
+      - cd vcpkg
+      - Windows: 
+          - .\bootstrap-vcpkg.bat
+          - .\vcpkg integrate install
+          - .\vcpkg install curl[*]:x86-windows (for x86 windows)
+          - .\vcpkg install curl[*]:x64-windows (for x64 windows)
+      - Linux: 
+          - ./bootstrap-vcpkg.sh
+          - ./vcpkg integrate install
+          - ./vcpkg install curl
 
 ```
 
@@ -63,20 +75,40 @@ A step by step series of examples that tell you have to get a development enviro
 
 Download the repository using either bash or the browser
 
+- Keylogger With Curl :
+
 ```
-git clone https://github.com/htmercury/Cpp-Keylogger
+git clone https://github.com/walidAbbassi/Keylogger-cpp/tree/master/KeyloggerWithCurl
 ```
 
 Open the solution file in Visual Studio using the sln file
 
 ```
-located at ..\Cpp-Keylogger\Keylogger.sln
+located at ..\KeyloggerWithCurl\Keylogger.sln
 ```
 
 For other IDEs, make a project that includes all source and header files
 
 ```
-located at ..\Cpp-Keylogger\Keylogger
+located at ..\KeyloggerWithCurl\Keylogger
+```
+
+- Keylogger :
+
+```
+git clone https://github.com/walidAbbassi/Keylogger-cpp/tree/master/Keylogger
+```
+
+Open the solution file in Visual Studio using the sln file
+
+```
+located at ..\Keylogger\Keylogger.sln
+```
+
+For other IDEs, make a project that includes all source and header files
+
+```
+located at ..\Keylogger\Keylogger
 ```
 
 ## Setting it up
@@ -87,7 +119,7 @@ Required if user wants the log to be sent to an email.
 
 Open SendMail.h
 ```
-located at ..\Cpp-Keylogger\Keylogger\SendMail.h
+located at ..\Keylogger\Keylogger\SendMail.h
 ```
 Edit line 16 for where the log should be sent from (default: gmail only, look at Other Emails section for changing that)
 ```
@@ -113,7 +145,7 @@ OPTIONAL: If you want to use another email other than gmail as the source email,
 
 Open SendMail.h
 ```
-located at ..\Cpp-Keylogger\Keylogger\SendMail.h
+located at ..\Keylogger\Keylogger\SendMail.h
 ```
 Edit line 39 with your email port number which can be searched up
 ```
@@ -126,21 +158,27 @@ Look up permissions respectively for your source email that allow less secure ap
 ## Decrypting the log files
 Follow these steps to decrypt any received log files
 
+- Keylogger-Decrypt :
+
+```
+git clone https://github.com/walidAbbassi/Keylogger-cpp/tree/master/Keylogger-Decrypt
+```
+
 Open the Decryption program solution with Visual Studio
 ```
-located at ..\Cpp-Keylogger\Keylogger-Decrypt.sln
+located at ..\Keylogger-Decrypt\Keylogger-Decrypt.sln
 ```
 For other IDEs, make a project that includes all source files
 ```
-located at ..\Cpp-Keylogger\Keylogger-Decrypt\
+located at ..\Keylogger-Decrypt\Keylogger-Decrypt\
 ```
-Build the solution, and find the exe (default: located at ../Cpp-Keylogger/Debug)
+Build the solution, and find the exe (default: located at ../Keylogger-Decrypt/Debug)
 ```
-located at ..\Cpp-Keylogger\Debug\Keylogger-Decrypt.exe
+located at ..\Keylogger-Decrypt\Debug\Keylogger-Decrypt.exe
 ```
 Open a command prompt window at that directory
 ```
-cd ..\Cpp-Keylogger\Debug\
+cd ..\Keylogger-Decrypt\Debug\
 ```
 Run the decryption program which takes in a input file and a output file which contains the decrypted contents
 ```
@@ -156,7 +194,7 @@ The name of the process can simply be changed by renaming the .exe file of the b
 Build the solution
 ```
 Build -> Build Solution
-The .exe file should be located by default in ..\Cpp-Keylogger\Debug\Keylogger.exe
+The .exe file should be located by default in ..\Keylogger\Debug\Keylogger.exe
 ```
 Rename the built Keylogger.exe file
 
@@ -165,7 +203,7 @@ Here, the user can set the interval at which each log file is created and sent
 
 Open KeybHook.h
 ```
-located at ..\Cpp-Keylogger\Keylogger\KeybHook.h
+located at ..\Keylogger\Keylogger\KeybHook.h
 ```
 Edit line 36 with the desired time (default is 30 seconds)
 ```
@@ -176,7 +214,7 @@ Here, the user can set how the log file formats the read keys
 
 Open Helper.h
 ```
-located at ..\Cpp-Keylogger\Keylogger\Helper.h
+located at ..\Keylogger\Keylogger\Helper.h
 ```
 Edit lines 77 - 83 to change how single keys are formated
 ```
@@ -188,7 +226,7 @@ Here, the user can exclude keys they don't want to be logged
 
 Open KeybHook.h
 ```
-located at ..\Cpp-Keylogger\Keylogger\KeybHook.h
+located at ..\Keylogger\Keylogger\KeybHook.h
 ```
 Take a look at lines 40 - 72
 ```
@@ -201,16 +239,16 @@ Here, the user builds the solution to an .exe file
 
 Open the solution file in Visual Studio using the sln file
 ```
-located at ..\Cpp-Keylogger\Keylogger.sln
+located at ..\Keylogger\Keylogger.sln
 ```
 For other IDEs, make a project that includes all source and header files
 ```
-located at ..\Cpp-Keylogger\Keylogger
+located at ..\Keylogger\Keylogger
 ```
 Build the solution
 ```
 Build -> Build Solution
-The .exe file should be located by default in ..\Cpp-Keylogger\Debug\Keylogger.exe
+The .exe file should be located by default in ..\Keylogger\Debug\Keylogger.exe
 ```
 
 
