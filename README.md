@@ -249,6 +249,7 @@ Build the solution
 ```
 Build -> Build Solution
 The .exe file should be located by default in ..\Keylogger\Debug\Keylogger.exe
+The .exe file should be located by default in ..\Keylogger\Release\Keylogger.exe
 ```
 
 
