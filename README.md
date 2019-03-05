@@ -62,7 +62,26 @@ What things you need to install the software and how to install them
 A step by step series of examples that tell you have to get a development environment running
 
 Download the repository using either bash or the browser
-- KeyloggerWithCurl
+
+- Keylogger With Curl
+
+```
+git clone https://github.com/htmercury/Cpp-Keylogger
+```
+
+Open the solution file in Visual Studio using the sln file
+
+```
+located at ..\Cpp-Keylogger\Keylogger.sln
+```
+
+For other IDEs, make a project that includes all source and header files
+
+```
+located at ..\Cpp-Keylogger\Keylogger
+```
+
+- Keylogger
 
 ```
 git clone https://github.com/htmercury/Cpp-Keylogger
