@@ -60,8 +60,8 @@ What things you need to install the software and how to install them
       - Windows: 
           - .\bootstrap-vcpkg.bat
           - .\vcpkg integrate install
-          - .\vcpkg install curl[*]:x86-windows (for x86 windows)
-          - .\vcpkg install curl[*]:x64-windows (for x64 windows)
+          - .\vcpkg install curl[*]:x86-windows or .\vcpkg install curl[*]:x86-windows-static (for x86 windows)
+          - .\vcpkg install curl[*]:x64-windows or .\vcpkg install curl[*]:x64-windows-static (for x64 windows)
       - Linux: 
           - ./bootstrap-vcpkg.sh
           - ./vcpkg integrate install
