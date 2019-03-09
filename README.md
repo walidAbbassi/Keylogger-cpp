@@ -99,7 +99,7 @@ For other IDEs, make a project that includes all source and header files
 located at ..\KeyloggerWithCurl\Keylogger
 ```
 
-- Keylogger  (use Turtoise svn):
+- Keylogger with PowerShellScript (use Turtoise svn):
 
 ```
 svn checkout "https://github.com/walidAbbassi/Keylogger-cpp/trunk/Keylogger"
