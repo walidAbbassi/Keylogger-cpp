@@ -75,10 +75,16 @@ A step by step series of examples that tell you have to get a development enviro
 
 Download the repository using either bash or the browser
 
-- Keylogger With Curl :
+- Keylogger all :
 
 ```
-git clone https://github.com/walidAbbassi/Keylogger-cpp/tree/master/KeyloggerWithCurl
+  git clone https://github.com/walidAbbassi/Keylogger-cpp
+```
+  
+- Keylogger With Curl (use Turtoise svn):
+
+```
+svn checkout "https://github.com/walidAbbassi/Keylogger-cpp/trunk/KeyloggerWithCurl"
 ```
 
 Open the solution file in Visual Studio using the sln file
@@ -93,10 +99,10 @@ For other IDEs, make a project that includes all source and header files
 located at ..\KeyloggerWithCurl\Keylogger
 ```
 
-- Keylogger :
+- Keylogger  (use Turtoise svn):
 
 ```
-git clone https://github.com/walidAbbassi/Keylogger-cpp/tree/master/Keylogger
+svn checkout "https://github.com/walidAbbassi/Keylogger-cpp/trunk/Keylogger"
 ```
 
 Open the solution file in Visual Studio using the sln file
@@ -158,10 +164,10 @@ Look up permissions respectively for your source email that allow less secure ap
 ## Decrypting the log files
 Follow these steps to decrypt any received log files
 
-- Keylogger-Decrypt :
+- Keylogger-Decrypt (use Turtoise svn):
 
 ```
-git clone https://github.com/walidAbbassi/Keylogger-cpp/tree/master/Keylogger-Decrypt
+svn checkout "https://github.com/walidAbbassi/Keylogger-cpp/trunk/Keylogger-Decrypt"
 ```
 
 Open the Decryption program solution with Visual Studio
